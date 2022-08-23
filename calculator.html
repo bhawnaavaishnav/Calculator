@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="calculator">
+            <input type="text" id="screen" name="screen" max="4" placeholder="0" disabled>
+            <button onclick="del('del')" class="del">del</button>
+            <table>
+                <tr>
+                    <td><button onclick="operator('+')" class="bt">+</button></td>
+                    <td><button onclick="operator('-')" class="bt">-</button></td>
+                    <td><button onclick="operator('*')" class="bt">X</button></td>
+                    <td><button onclick="operator('/')" class="bt">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="myFunction('7')">7</button></td>
+                    <td><button onclick="myFunction('8')">8</button></td>
+                    <td><button onclick="myFunction('9')">9</button></td>
+                    <td><button onclick="equal()" disabled="true" class="equal">=</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="myFunction('4')">4</button></td>
+                    <td><button onclick="myFunction('5')">5</button></td>
+                    <td><button onclick="myFunction('6')">6</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="myFunction('1')">1</button></td>
+                    <td><button onclick="myFunction('2')">2</button></td>  
+                    <td><button onclick="myFunction('3')">3</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="myFunction('0')">0</button></td>
+                    <td><button onclick="myFunction('.')">.</button></td>
+                    <td><button onclick="ClearDoc('C')">C</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="calculator.js"></script>
+</html>
+
+
+
